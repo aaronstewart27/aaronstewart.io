@@ -1,7 +1,8 @@
 .wrapper{
+    background-image: url("img/hero-bg.jpg");
     display: block;
     width: 100%;
-    height: auto;
+    height: 100vh;
     background: #DDD;
     position: relative;
 }
@@ -11,8 +12,13 @@
     width: 960px;
     margin: 0px auto;
     padding: 60px 16px;
-    background: #EEE;
+    /*background: #EEE;*/
     border: 1px solid #000;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 50%;
+    margin-left: -480px;
 }
 
 #hero-bg{
@@ -21,16 +27,10 @@
 
 h1{
     font-weight: 800;
-    position: absolute;
-    top: 150px;
-    left: 500px;
     color: white;
 }
 
 h2{
     font-weight: 600;
-    position: absolute;
-    top: 200px;
-    left: 475px;
     color: white;
 }
