@@ -11,8 +11,11 @@
     width: 960px;
     margin: 0px auto;
     padding: 60px 16px;
-    background: #EEE;
     border: 1px solid #000;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -480px;
 }
 
 #hero-bg{
@@ -21,16 +24,16 @@
 
 h1{
     font-weight: 800;
-    position: absolute;
+    /*position: absolute;
     top: 150px;
-    left: 500px;
+    left: 500px;*/
     color: white;
 }
 
 h2{
     font-weight: 600;
-    position: absolute;
+    /*position: absolute;
     top: 200px;
-    left: 475px;
+    left: 475px;*/
     color: white;
 }
