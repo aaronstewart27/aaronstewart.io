@@ -12,10 +12,15 @@
     width: 960px;
     margin: 0px auto;
     padding: 60px 16px;
+<<<<<<< HEAD
     /*background: #EEE;*/
     border: 1px solid #000;
     position: absolute;
     text-align: center;
+=======
+    border: 1px solid #000;
+    position: absolute;
+>>>>>>> a80b77878da168549d5b3b02c17045e5681af423
     top: 0px;
     left: 50%;
     margin-left: -480px;
@@ -27,10 +32,22 @@
 
 h1{
     font-weight: 800;
+<<<<<<< HEAD
+=======
+    /*position: absolute;
+    top: 150px;
+    left: 500px;*/
+>>>>>>> a80b77878da168549d5b3b02c17045e5681af423
     color: white;
 }
 
 h2{
     font-weight: 600;
+<<<<<<< HEAD
+=======
+    /*position: absolute;
+    top: 200px;
+    left: 475px;*/
+>>>>>>> a80b77878da168549d5b3b02c17045e5681af423
     color: white;
 }
