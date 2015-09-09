@@ -1,4 +1,36 @@
+.wrapper{
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #DDD;
+    position: relative;
+}
+
+.container{
+    display: block;
+    width: 960px;
+    margin: 0px auto;
+    padding: 60px 16px;
+    background: #EEE;
+    border: 1px solid #000;
+}
+
+#hero-bg{
+    width: 100%;
+}
 
 h1{
-    color: blue;
+    font-weight: 800;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    color: white;
+}
+
+h2{
+    font-weight: 600;
+    position: absolute;
+    top: 200px;
+    left: 475px;
+    color: white;
 }
