@@ -14,7 +14,6 @@
     width: 960px;
     margin: 0px auto;
     padding: 60px 16px;
-    border: 1px solid #000;
     position: absolute;
     text-align: center;
     top: 0px;
@@ -22,16 +21,48 @@
     margin-left: -480px;
 }
 
-#hero-bg{
-    width: 100%;
-}
-
 h1{
     font-weight: 800;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.75em;
+    margin-bottom: 20px;
 }
 
 h2{
     font-weight: 600;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
 }
+
+.circle{
+    border-radius: 50%;
+    border: 2px solid #7E878F;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+    /*margin-left: -125px;*/
+    margin: 0 auto;
+}
+
+.fa-twitter{
+    color: #7E878F;
+    /*margin: 0 auto;*/
+}
+
+.fa-facebook{
+    color: #7E878F;
+}
+
+.fa-google-plus{
+    color: #7E878F;
+}
+
+
+
+
+
+
