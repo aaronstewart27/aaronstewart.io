@@ -68,6 +68,43 @@
 }
 
 
+/* About Me Formatting */
+
+
+.heading-container h1{
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.about-inner-container{
+    display: block;
+    width: 960px;
+    margin: 0px auto;
+    padding: 15px 15px;
+    position: absolute;
+}
+
+.top-text p:nth-child(1){
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.top-text p:nth-child(2){
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    opacity: 0.5;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
 
 
 
