@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aaron Stewart | HTML, CSS, JS Developer</title>
+    <title>Aaron Stewart | Front-End Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -11,53 +11,85 @@
     <!-- Hero Wrapper (This goes 100% the width of the page) -->
     <div class="wrapper hero">
         <!-- Hero Container -->
+
         <div class="container hero">
             <!-- Hero Headers -->
             <h1>Aaron Stewart</h1>
-            <h2>Web + Mobile Developer</h2>
+            <h2>Web &amp; Mobile Developer</h2>
+
             <!-- Hero Social Media Icons -->
             <div class="hero-icons">
-                <div class="circle">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-google-plus"></i>            
-                </div>
+
+                <!-- LinkedIn Profile -->
+                <a href="https://www.linkedin.com/in/aaron-stewart-2b7011124"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+                <!-- Github Profile -->
+                <a href="https://github.com/aaronstewart27"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+
+                <!-- Facebook Account -->
+                <a href="https://www.facebook.com/aaron.stewart.3726"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+                <!-- Twitter Account -->
+                <a href="https://twitter.com/aaron_stewart27"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                
+            </div>
+            <div id="me-hero-container">
+                <!-- About Me Placeholder Image -->
+                <img src="img/me-hero_v2.png" alt="" id="me-hero">
             </div>
         </div>
+
     </div>
-
-
-    <!-- Icon Example -->
-    <!-- <div class="circle">
-        <i class="fa fa-twitter"></i>
-    </div> -->
-
 
     <!-- About Wrapper (This goes 100% the width of the page) -->
     <div class="wrapper about">
+
         <!-- About Container -->
         <div class="container about">
+
             <!-- Main Heading -->
             <div class="heading-container">
                 <h1>About Me</h1>
                 <div class="heading-bar"></div>
             </div>
+
             <!-- Inner Container -->
             <div class="about-inner-container">
                 <div class="top-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium exercitationem delectus, illo quia explicabo eveniet. Odio explicabo veritatis incidunt debitis, vel soluta ipsam, nihil excepturi fugit minus, ipsa corporis illum?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ex qui veritatis nesciunt corporis tempore, nulla hic, sunt magnam quos sed voluptas soluta, nemo aperiam vel odit nisi modi eveniet?</p>
+                    <p>Junior Web and Mobile Developer specializing in front-end web development. Able to build a web presence from the ground up - from concept, navigation, layout and coding/programming. Experienced with all stages of the development cycle for dynamic projects.</p>
+                    <p>Strong background in project management and worker client relationship. Fast learner, hard worker, and a team player that is proficient in an array of scripting languages.</p>
                 </div>
                 <div class="bottom-container">
                     <div class="myinfo-container">
-                        <ul>
+                        <ul id="myinfo-data">
                             <li><strong>Birthdate: </strong><span>08/27/1993</span></li>
-                            
+                            <li><strong>Phone: </strong><span>(443)-569-1784</span></li>
+                            <li><strong>Email: </strong><span>stewart.aaron.27@gmail.com</span></li>
+                            <li><strong>Website: </strong><span>aaronstew.io</span></li>
+                            <li><strong>Address: </strong><span>1054 Carriage Hill Parkway<br>Annapolis, MD 21401</span></li>
                         </ul>
+
+                        <div id="about-me-signature">
+                            <img src="img/my-signature.png" alt="Image of my signature"><br><br>
+                        </div>
+
+                        <a href="/resume/Resume_2016" id="about-me-resume-button" download>
+                            <!-- Insert + Format Resume Button in CSS -->
+                        </a>
+                        
                     </div>
+
                     <div class="hobbies-interests-container">
+
+                        <h3>Hobbies &amp; Interests</h3>
+
                         <ul>
                             <li><img src="img/hobbies-interests-coffee.jpg" alt=""></li>
+                            <li><img src="img/hobbies-interests-music.jpg" alt=""></li>
+                            <li><img src="img/hobbies-interests-travel.jpg" alt=""></li><br>
+                            <li><img src="img/hobbies-interests-MacOS.jpg" alt=""></li>
+                            <li><img src="img/hobbies-interests-cinema.jpg" alt=""></li>
+                            <li><img src="img/hobbies-interests-cars.jpg" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -65,23 +97,284 @@
         </div>
     </div>
 
-    <!-- This is the type of structure you have for every section of the site -->
-    <!-- wrapper -->
-        <!-- container -->
-            <!-- heading-container -->
-            <!-- inner-container -->
-    <div class="wrapper">
-        <div class="container">
-            <div class="heading-container">
-                
+
+    <!-- Milestones Achieved  -->
+
+    <!-- <div class="wrapper milestones">
+        <div class="milestones container">
+            <div class="heading-milestones">
+
+                <h3>Milestones Achieved</h3>
+
+                <div class="inner-container-milestones">
+                    <div id="milestones-images">
+                        <ul>
+                            <li><img src="img/milestones-achieved-coffee.jpg" alt=""></li>
+                            <li><img src="img/milestones-achieved-projects.jpg" alt=""></li>
+                            <li><img src="img/milestones-achieved-clients.jpg" alt=""></li>
+                            <li><img src="img/milestones-achieved-awards.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div id="milestones-images-info">
+                        <p>2412<br>Cups of Coffee</p>
+                        <p>550<br>Successful Projects</p>
+                        <p>212<br>Happy Clients</p>
+                        <p>99<br>Awards Won</p>
+                    </div>
+                </div>
             </div>
-            <div class="inner-container">
-                
+        </div>
+    </div> -->
+
+
+    <!-- Skills  -->
+    <div class="wrapper skills" id="skills">
+        <div class="skills container">
+            <div class="heading-skills">
+
+                <h1>Skills</h1>
+
+                <div class="inner-container-skills">
+                    <div id="skills-row1">
+                        <div id="html-icon">
+                            <i class="fa fa-html5" aria-hidden="true"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div id="css-icon">
+                            <i class="fa fa-css3" aria-hidden="true"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div id="javascript-icon">
+                            <img src="img/javascript-logo.png" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                        <div id="jquery-icon">
+                            <img src="img/jquery-logo.png" alt="">
+                            <p>jQuery</p>
+                        </div>
+                    </div>
+                    <div id="skills-row2">
+                        <div id="github-icon">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <p>Github</p>
+                        </div>
+                        <div id="terminal-icon">
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            <p>Terminal</p>
+                        </div>
+                        <div id="sublime-text-icon">
+                            <img src="img/sublime-text-logo.png" alt="">
+                            <p>Sublime Text</p>
+                        </div>
+                        <div id="photoshop-icon">
+                            <img src="img/photoshop-logo.png" alt="">
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    
+
+    <!-- My Services -->
+
+    <div class="wrapper services">
+        <div class="services container">
+            <div class="heading-services">
+                
+                <h3>My Services</h3>
+                
+                <div class="inner-container-services">
+                    <div class="inner-services-left">
+                        <div class="services-first-row">
+                            <img src="img/my-services-designing.jpg" alt="">
+                            <h5>DESIGNING</h5>
+                            <p>Left brain: Artistic, Creative, Holistic, Imaginitive. Front-End</p>
+                        </div>
+                        <div class="services-second-row">
+                            <img src="img/my-services-branding.jpg" alt="">
+                            <h5>BRANDING</h5>
+                            <p>My brand is a promise to my client, to provide them with the best products and services for their business to thrive.</p>
+                        </div>
+                        <!-- <div class="services-third-row">
+                            <img src="img/my-services-analytics.jpg" alt="">
+                            <h5>ANALYTICS</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque atque incidunt nemo omnis, accusamus, perspiciatis commodi molestiae ullam saepe impedit!</p>
+                        </div> -->
+                    </div>
+
+                    <div class="inner-services-right">
+                        <div class="services-first-row">
+                            <img src="img/my-services-developing.jpg" alt="">
+                            <h5>DEVELOPING</h5>
+                            <p>Right brain: Analytical, Logical, Sequential, Technical.</p>
+                        </div>
+                        <div class="services-second-row">
+                            <img src="img/my-services-support.jpg" alt="">
+                            <h5>SUPPORT</h5>
+                            <p>Any imperfection, large or small, prompt service will be provided until the client's demands are met.</p>
+                        </div>
+                        <!-- <div class="services-third-row">
+                            <img src="img/my-services-marketing.jpg" alt="">
+                            <h5>MARKETING</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque atque incidunt nemo omnis, accusamus, perspiciatis commodi molestiae ullam saepe impedit!</p>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper process">
+        <div class="process container">
+            <div class="heading-process">
+
+                <h3>Work Process</h3>
+
+                <div class="inner-container-process">
+                    <!-- Idea -->
+                    <div id="process-idea">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <h5>Idea</h5>
+                    </div>
+                    <div class="horizontal-line" id="horizontal-idea-top">
+                        
+                    </div>
+                    <div class="vertical-line" id="vertical-idea">
+                        
+                    </div>
+                    <div class="horizontal-line" id="horizontal-idea-bot">
+                        
+                    </div>
+                    <!-- Sketch -->
+                    <div id="process-sketch">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <h5>Sketch</h5>
+                    </div>
+                    <!-- Design -->
+                    <div class="horizontal-line" id="horizontal-design-bot">
+                        
+                    </div>
+                    <div class="vertical-line" id="vertical-design">
+                        
+                    </div>
+                    <div class="horizontal-line" id="horizontal-design-top">
+                        
+                    </div>
+                    <div id="process-design">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h5>Design</h5>
+                    </div>
+                    <!-- Develop -->
+                    <div class="horizontal-line" id="horizontal-develop-top">
+                        
+                    </div>
+                    <div class="vertical-line" id="vertical-develop">
+                        
+                    </div>
+                    <div class="horizontal-line" id="horizontal-develop-bot">
+                        
+                    </div>
+                    <div id="process-develop">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <h5>Develop</h5>
+                    </div>
+                    <!-- Test Process -->
+                    <div class="horizontal-line" id="horizontal-test-top">
+                        
+                    </div>
+                    <div class="vertical-line" id="vertical-test">
+                        
+                    </div>
+                    <div class="horizontal-line" id="horizontal-test-bot">
+                        
+                    </div>
+                    <div id="process-test">
+                        <i class="fa fa-bug" aria-hidden="true"></i>
+                        <h5>Test</h5>
+                    </div>
+                    <!-- Launch Process -->
+                    <div class="horizontal-line" id="horizontal-launch-top">
+                        
+                    </div>
+                    <div class="vertical-line" id="vertical-launch">
+                        
+                    </div>
+                    <div class="horizontal-line" id="horizontal-launch-bot">
+                        
+                    </div>
+                    <div id="process-launch">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                        <h5>Launch</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="wrapper contact">
+        <div class="contact container">
+            <div class="heading-contact">
+
+                <h3>Contact Me</h3>
+
+                <div class="inner-container-contact">
+                    <div id="address">
+                        <img src="img/contact-me-address-icon.jpg" alt="">
+                        <p>Address</p>
+                        <p>1054 Carriage Hill Pkwy<br>Annapolis, MD 21401</p>
+                    </div>
+                    <div id="email">
+                        <img src="img/contact-me-email-icon.jpg" alt="">
+                        <p>Email</p>
+                        <p>stewart.aaron.27@gmail.com</p>
+                    </div>
+                    <div id="phone">
+                        <img src="img/contact-me-phone-icon.jpg" alt="">
+                        <p>Phone</p>
+                        <p>443-569-1784</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me Form -->
+    <div class="wrapper form">
+        <div class="form container">
+            <div class="heading-form">
+                <div class="inner-container-form">
+                    <div class="inner-container-form">
+                        <form action="MAILTO:stewart.aaron.27@gmail.com" method="post" id="form-info" enctype="text/plain">
+                            <input type="text" name="fullname" placeholder="Name" size="33">
+                            <input type="text" name="email" placeholder="Email" size="37"><br>
+                            <textarea name="message" id="form-message" cols="70" rows="10" placeholder="Message"></textarea><br>
+                            <button type="submit">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="wrapper footer">
+        <div class="footer container">
+            <div class="heading-footer">
+                <div class="inner-container-footer">
+                    <div id="copyright">Copyright &copy; 2016 Aaron Stewart</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

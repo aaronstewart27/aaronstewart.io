@@ -51,25 +51,73 @@
     height: 25px;
     text-align: center;
 }
+
+.circle:nth-child(n){
+    display: inline-block;
+}
+
 .circle i{
     margin-top: 5px;
 }
 
-.fa-twitter{
-    color: #7E878F;
+.fa-twitter-square{
+    color: #0084b4;
 }
 
-.fa-facebook{
-    color: #7E878F;
+.fa.fa-twitter-square{
+    font-size: 2.5em;
 }
 
-.fa-google-plus{
-    color: #7E878F;
+.fa-facebook-square{
+    color: #3B5998;
+}
+
+.fa.fa-facebook-square{
+    font-size: 2.5em;
+}
+
+.fa-instagram{
+    color: #e95950;
+}
+
+.fa.fa-instagram{
+    font-size: 2.5em;
+}
+
+.fa-linkedin-square{
+    color: #007bb5;
+}
+
+.fa.fa-linkedin-square{
+    font-size: 2.5em;
+}
+
+.fa-github-square{
+    color: #ff9933;
+}
+
+.fa.fa-github-square{
+    font-size: 2.5em;
 }
 
 
 /* About Me Formatting */
 
+#me-hero-container{
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 3% auto 0 auto;
+    overflow: hidden;
+}
+
+#me-hero{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .heading-container h1{
     font-weight: 800;
@@ -78,6 +126,11 @@
     margin-top: 10%;
     margin-bottom: 5%;
     text-align: center;
+}
+
+.top-text{
+    width: 85%;
+    margin-left: 5%;
 }
 
 .about-inner-container{
@@ -104,6 +157,831 @@
     line-height: 30px;
     margin-bottom: 30px;
 }
+
+/* Insert font-family for about me info (left side) */
+
+.myinfo-container{
+    width: 45%;
+    float: left;
+}
+
+#myinfo-data li:nth-of-type(n){
+    margin-left: 7%;
+    line-height: 140%;
+}
+
+#about-me-signature{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#about-me-signature img{
+    margin-left: 15%;
+}
+
+#about-me-resume-button{
+    background-image: url("../img/download-resume-button.jpg");
+    width: 230px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 15%;
+}
+
+/* About Me Hobbies & Interest */
+
+.hobbies-interests-container h3{
+    padding-top: 10px;
+    position: relative;
+    top: 0;
+    left: 11%;
+
+}
+
+.hobbies-interests-container ul > li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.hobbies-interests-container img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+
+}
+
+.myinfo-container li:nth-of-type(n){
+    list-style-type: none;
+}
+
+
+/* Skills */
+
+.skills.wrapper{
+    height: 100vh;
+    background-image: url("../img/milestones-achieved-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 48%;
+}
+
+.heading-skills h1{
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#skills-row1{
+    display: inline-flex;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.fa-html5{
+    color: #E34C26;
+}
+
+.fa.fa-html5{
+    font-size: 4.5em;
+    padding-left: 4px;
+}
+
+.fa-css3{
+    color: #0080ff;
+}
+
+.fa.fa-css3{
+    font-size: 4.5em;
+}
+
+#javascript-icon img{
+    width: 65px;
+    height: 65px;
+    padding-left: 10px;
+}
+
+#jquery-icon img{
+    width: 65px;
+    height: 65px;
+}
+
+#html-icon{
+    padding-right: 15%;
+}
+
+#css-icon{
+    padding-right: 15%;
+}
+
+#javascript-icon{
+    padding-right: 15%;
+}
+
+#html-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#css-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#javascript-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#jquery-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#skills-row2{
+    margin-top: 5%;
+    display: inline-flex;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.fa-github{
+    color: #ff9933;
+}
+
+.fa.fa-github{
+    font-size: 4.5em;
+}
+
+.fa-terminal{
+    color: #fff;
+}
+
+.fa.fa-terminal{
+    font-size: 4.5em;
+}
+
+#sublime-text-icon img{
+    width: 65px;
+    height: 65px;
+}
+
+#photoshop-icon img{
+    width: 65px;
+    height: 65px;
+}
+
+#github-icon{
+    padding-right: 15%;
+}
+
+#terminal-icon{
+    padding-right: 15%;
+}
+
+#sublime-text-icon{
+    padding-right: 12%;
+}
+
+#sublime-text-icon img{
+    padding-left: 10px;
+}
+
+#photoshop-icon img{
+    /*padding-left: 10px;*/
+}
+
+#github-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#terminal-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#sublime-text-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#photoshop-icon p{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Milestones Achieved */
+
+.milestones.wrapper{
+    height: 100vh;
+    background-image: url("../img/milestones-achieved-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 48%;
+}
+
+.heading-milestones h3{
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.inner-container-milestones ul > li{
+    list-style-type: none;
+    color: #fff;
+}
+
+.inner-container-milestones img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.inner-container-milestones ul{
+    display: inline-flex;
+    margin-left: 17%;
+}
+
+.inner-container-milestones img:nth-of-type(n){
+    margin-right: 40px;
+}
+
+#milestones-images-info{
+    margin-left: 21%;
+}
+
+#milestones-images-info p{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+#milestones-images-info p:nth-of-type(2){
+    padding-left: 2%;
+}
+
+#milestones-images-info p:nth-of-type(3){
+    padding-left: 2%;
+}
+
+#milestones-images-info p:nth-of-type(4){
+    padding-left: 6%;
+}
+
+
+/* My Services */
+
+.inner-services-left{
+    width: 40%;
+    display: inline-block;
+}
+
+.inner-services-left img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 44%;
+}
+
+.heading-services h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.inner-services-left h5{
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.inner-services-left p{
+    margin-top: 0;
+    font-size: 0.8em;
+    padding-left: 28px;
+    opacity: 0.5;
+}
+
+.inner-services-right{
+    width: 40%;
+    float: right;
+}
+
+.inner-services-right img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 44%;
+}
+
+.inner-services-right h5{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.inner-services-right p{
+    margin-top: 0;
+    font-size: 0.8em;
+    padding-right: 28px;
+    opacity: 0.5;
+}
+
+.services-first-row{
+    padding-bottom: 2%;
+}
+
+.services-second-row{
+    padding-bottom: 2%;
+}
+
+
+/* Work Process */
+
+.process.wrapper{
+    height: 400px;
+    background-image: url("../img/milestones-achieved-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading-process h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #fff;
+    padding-top: 5%;
+}
+
+.inner-container-process{
+    width: 100%;
+}
+
+/* Idea Process */
+
+#process-idea{
+    width: 8%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    margin-left: 10%;
+}
+
+.fa-lightbulb-o{
+    color: #fff;
+    
+}
+
+.fa.fa-lightbulb-o{
+    font-size: 1.8em;
+    padding-top: 11px;
+    padding-left: 32px;
+}
+
+#process-idea h5{
+    color: #fff;
+    padding-left: 22px;
+    font-size: 1em;
+}
+
+#vertical-idea{
+    border-left: 1px solid #fff;
+    height: 52px;
+    position: absolute;
+    top: 43%;
+    left: 28%;
+}
+
+#horizontal-idea-top{
+    border-top: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 43%;
+    left: 26.2%;
+}
+
+#horizontal-idea-bot{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 56%;
+    left: 28%;
+}
+
+/* Sketch Process */
+
+.fa-pencil-square-o{
+    color: #fff;
+}
+
+.fa.fa-pencil-square-o{
+    font-size: 1.8em;
+    padding-top: 13px;
+    padding-left: 29px;
+}
+
+#process-sketch{
+    width: 8%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 49%;
+    left: 29.8%;
+}
+
+#process-sketch h5{
+    color: #fff;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+/* Design Process */
+
+#horizontal-design-bot{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 56%;
+    left: 36.3%;
+}
+
+#vertical-design{
+    border-left: 1px solid #fff;
+    height: 52px;
+    position: absolute;
+    top: 43.3%;
+    left: 38.2%;
+}
+
+#horizontal-design-top{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 43%;
+    left: 38.2%;
+}
+
+.fa-laptop{
+    color: #fff;
+}
+
+.fa.fa-laptop{
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#process-design{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 35.5%;
+    left: 40%;
+}
+
+#process-design h5{
+    color: #fff;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+/* Develop */
+.fa-code{
+    color: #fff;
+}
+
+.fa.fa-code{
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#process-develop{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 49%;
+    left: 50.3%;
+}
+
+#horizontal-develop-top{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 43%;
+    left: 46.5%;
+}
+
+#vertical-develop{
+    border-left: 1px solid #fff;
+    height: 52px;
+    position: absolute;
+    top: 43%;
+    left: 48.4%;
+}
+
+#horizontal-develop-bot{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 56%;
+    left: 48.4%;
+}
+
+#process-develop h5{
+    color: #fff;
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+/* Test */
+
+#horizontal-test-bot{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 56%;
+    right: 41.4%;
+}
+
+#vertical-test{
+    border-left: 1px solid #fff;
+    height: 52px;
+    position: absolute;
+    top: 43%;
+    right: 41.4%;
+}
+
+#horizontal-test-top{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 43%;
+    right: 39.5%;
+}
+
+.fa-bug{
+    color: #fff;
+}
+
+.fa.fa-bug{
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#process-test{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 35.5%;
+    right: 33.1%;
+}
+
+#process-test h5{
+    color: #fff;
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+/* Launch */
+
+#horizontal-launch-top{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 43%;
+    right: 31.2%;
+}
+
+#vertical-launch{
+    border-left: 1px solid #fff;
+    height: 52px;
+    position: absolute;
+    top: 43%;
+    right: 31.2%
+}
+
+#horizontal-launch-bot{
+    border-bottom: 1px solid #fff;
+    width: 24px;
+    position: absolute;
+    top: 56%;
+    right: 29.4%;
+}
+
+.fa-rocket{
+    color: #fff;
+}
+
+.fa.fa-rocket{
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#process-launch{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 49%;
+    right: 23%;
+}
+
+#process-launch h5{
+    color: #fff;
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+
+/* Contact Me */
+
+.contact.wrapper{
+    margin-bottom: 5%;
+}
+
+.heading-contact h3{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.inner-container-contact{
+    width: 100%;
+    display: inline-flex;
+    padding-left: 17%;
+}
+
+#address{
+    width: 25%;
+}
+
+#address img{
+    height: 60px;
+    float: left;
+}
+
+#address p:nth-of-type(1){
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 28%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#address p:nth-of-type(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-left: 28%;
+    padding-top: 5px;
+}
+
+#email{
+    width: 25%;
+}
+
+#email img{
+    height: 60px;
+    float: left;
+}
+
+#email p:nth-of-type(1){
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 28%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#email p:nth-of-type(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-left: 28%;
+    padding-top: 20px;
+}
+
+#phone{
+    width: 25%;
+}
+
+#phone img{
+    height: 60px;
+    float: left;
+}
+
+#phone p:nth-of-type(1){
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 28%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#phone p:nth-of-type(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-left: 28%;
+    padding-top: 20px;
+}
+
+
+/* Contact Form */
+
+.inner-container-form{
+    width: 90%;
+    margin-left: 12%;
+}
+
+#form-info input:nth-of-type(1){
+    height: 25px;
+    font-size: smaller;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+#form-info input:focus::before{
+    outline: none;
+}
+
+#form-info input:focus::after{
+    border: 1px solid #e74c3c;
+}
+
+
+#form-info input:nth-of-type(2){
+    height: 25px;
+    font-size: smaller;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+#form-message{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: smaller;
+}
+
+#form-info button{
+    width: 65.5%;
+    border: 1px solid #e74c3c;
+    border-radius: 3px;
+    margin-bottom: 3%;
+    color: #fff;
+    background-color: #e74c3c;
+    height: 35px;
+    font-size: smaller;
+}
+
+#form-info i{
+    padding-right: 10px;
+}
+
+
+
+/* Copyright */
+
+#copyright{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+}
+
+.footer.wrapper{
+    background-image: url("../img/milestones-achieved-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+
+
+
 
 
 
