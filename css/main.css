@@ -11,7 +11,7 @@
 }
 .hero.wrapper{
     height: 100vh;
-    background-image: url("../img/hero-bg.jpg");
+    background-image: url("../img/bg-hero-new-york.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,15 +31,17 @@
 
 .hero h1{
     font-weight: 800;
-    color: white;
+    /*color: white;*/
+    color: #000;
     font-family: 'Raleway', sans-serif;
-    font-size: 2.75em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .hero h2{
     font-weight: 600;
-    color: white;
+    /*color: white;*/
+    color: #000;
     font-family: 'Raleway', sans-serif;
     font-size: 1.25em;
 }
@@ -170,23 +172,51 @@
     line-height: 140%;
 }
 
-#about-me-signature{
+/*#about-me-signature{
     margin-top: 30px;
     margin-left: 50px;
 }
 
 #about-me-signature img{
     margin-left: 15%;
-}
+}*/
 
-#about-me-resume-button{
+/*#about-me-resume-button{
     background-image: url("../img/download-resume-button.jpg");
     width: 230px;
     height: 50px;
     display: block;
     background-repeat: no-repeat;
     margin-left: 15%;
+}*/
+
+#about-me-resume-button{
+    height: 40px;
+    width: 230px;
+    background-color: #e74c3c;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-top: 5%;
+    color: #fff;
 }
+
+.myinfo-container a{
+    text-decoration: none;
+}
+
+.fa-download{
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.fa.fa-download{
+    font-size: 1.2em;
+}
+
+
 
 /* About Me Hobbies & Interest */
 
@@ -219,7 +249,7 @@
 
 .skills.wrapper{
     height: 100vh;
-    background-image: url("../img/milestones-achieved-bg.jpg");
+    background-image: url("../img/bg-hero-new-york-grey.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
