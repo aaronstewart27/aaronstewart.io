@@ -11,6 +11,7 @@
 }
 .hero.wrapper{
     height: 100vh;
+    min-height: 500px;
     background-image: url("../img/bg-hero-new-york.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,9 +103,6 @@
     font-size: 2.5em;
 }
 
-
-/* About Me Formatting */
-
 #me-hero-container{
     display: block;
     height: 200px;
@@ -121,6 +119,30 @@
     height: auto;
 }
 
+/* About Me Formatting */
+
+.about.wrapper{
+    width: 100%;
+}
+
+.about.container{
+    display: block;
+    width: 960px;
+    margin: 0px auto;
+}
+
+.about-inner-container{
+    display: block;
+    width: 960px;
+    margin: 0px auto;
+    padding: 15px 15px;
+    position: absolute;
+}
+
+.bottom-container{
+    width: 85%;
+}
+
 .heading-container h1{
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
@@ -133,14 +155,6 @@
 .top-text{
     width: 85%;
     margin-left: 5%;
-}
-
-.about-inner-container{
-    display: block;
-    width: 960px;
-    margin: 0px auto;
-    padding: 15px 15px;
-    position: absolute;
 }
 
 .top-text p:nth-child(1){
@@ -162,9 +176,14 @@
 
 /* Insert font-family for about me info (left side) */
 
-.myinfo-container{
+.myinfo-container-left{
     width: 45%;
     float: left;
+}
+
+.myinfo-container-right{
+    width: 45%;
+    float: right;
 }
 
 #myinfo-data li:nth-of-type(n){
@@ -172,23 +191,15 @@
     line-height: 140%;
 }
 
-/*#about-me-signature{
-    margin-top: 30px;
-    margin-left: 50px;
+#myinfo-data{
+    margin-bottom: 10%;
 }
 
-#about-me-signature img{
-    margin-left: 15%;
-}*/
+#myinfo-data li:nth-of-type(n){
+    list-style-type: none;
+}
 
-/*#about-me-resume-button{
-    background-image: url("../img/download-resume-button.jpg");
-    width: 230px;
-    height: 50px;
-    display: block;
-    background-repeat: no-repeat;
-    margin-left: 15%;
-}*/
+/* Download Resume Button */
 
 #about-me-resume-button{
     height: 40px;
@@ -196,13 +207,9 @@
     background-color: #e74c3c;
     border: 1px solid #fff;
     border-radius: 5px;
-    margin-left: 15%;
-    margin-top: 5%;
+    /*margin-left: 15%;
+    margin-top: 5%;*/
     color: #fff;
-}
-
-.myinfo-container a{
-    text-decoration: none;
 }
 
 .fa-download{
@@ -216,11 +223,66 @@
     font-size: 1.2em;
 }
 
+/* Format Hobbies & Interests */
+
+.tech-row1{
+    display: inline-flex;
+    width: 100%;
+}
+
+.hobby-circle{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/* Coffee */
+
+.fa-coffee{
+    color: #fff;
+}
+
+.fa.fa-coffee{
+    font-size: 1.5em;
+}
+
+.hobby-circle i:nth-of-type(1){
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.hobby-circle p:nth-of-type(1){
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* Photography */
+
+#photography{
+    margin-left: 10%;
+}
+
+#photo{
+    margin-left: 18px;
+}
+
+.fa-camera{
+    color: #fff;
+}
+
+.fa.fa-camera{
+    font-size: 1.5em;
+}
+
+
 
 
 /* About Me Hobbies & Interest */
 
-.hobbies-interests-container h3{
+/*.hobbies-interests-container h3{
     padding-top: 10px;
     position: relative;
     top: 0;
@@ -231,29 +293,42 @@
 .hobbies-interests-container ul > li{
     list-style-type: none;
     display: inline-block;
-}
+}*/
 
-.hobbies-interests-container img{
+/*.hobbies-interests-container img{
     width: 100px;
     height: 100px;
     margin-left: 20px;
 
-}
+}*/
 
 .myinfo-container li:nth-of-type(n){
     list-style-type: none;
 }
 
+/*#coffee{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #D3D3D3;
+}*/
+
 
 /* Skills */
 
 .skills.wrapper{
-    height: 100vh;
+    /*height: 100vh;*/
+    height: auto;
     background-image: url("../img/bg-hero-new-york-grey.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 48%;
+}
+
+.container.skills{
+    padding-bottom: 5%;
 }
 
 .heading-skills h1{
@@ -405,7 +480,7 @@
 
 /* Milestones Achieved */
 
-.milestones.wrapper{
+/*.milestones.wrapper{
     height: 100vh;
     background-image: url("../img/milestones-achieved-bg.jpg");
     background-repeat: no-repeat;
@@ -462,12 +537,12 @@
 
 #milestones-images-info p:nth-of-type(4){
     padding-left: 6%;
-}
+}*/
 
 
 /* My Services */
 
-.inner-services-left{
+/*.inner-services-left{
     width: 40%;
     display: inline-block;
 }
@@ -529,12 +604,12 @@
 
 .services-second-row{
     padding-bottom: 2%;
-}
+}*/
 
 
 /* Work Process */
 
-.process.wrapper{
+/*.process.wrapper{
     height: 400px;
     background-image: url("../img/milestones-achieved-bg.jpg");
     background-repeat: no-repeat;
@@ -556,7 +631,7 @@
 
 /* Idea Process */
 
-#process-idea{
+/*#process-idea{
     width: 8%;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -604,11 +679,11 @@
     position: absolute;
     top: 56%;
     left: 28%;
-}
+}*/
 
 /* Sketch Process */
 
-.fa-pencil-square-o{
+/*.fa-pencil-square-o{
     color: #fff;
 }
 
@@ -633,11 +708,11 @@
     color: #fff;
     font-size: 1em;
     padding-left: 15px;
-}
+}*/
 
 /* Design Process */
 
-#horizontal-design-bot{
+/*#horizontal-design-bot{
     border-bottom: 1px solid #fff;
     width: 24px;
     position: absolute;
@@ -685,10 +760,10 @@
     color: #fff;
     font-size: 1em;
     padding-left: 15px;
-}
+}*/
 
 /* Develop */
-.fa-code{
+/*.fa-code{
     color: #fff;
 }
 
@@ -736,11 +811,11 @@
     color: #fff;
     font-size: 1em;
     padding-left: 10px;
-}
+}*/
 
 /* Test */
 
-#horizontal-test-bot{
+/*#horizontal-test-bot{
     border-bottom: 1px solid #fff;
     width: 24px;
     position: absolute;
@@ -788,11 +863,11 @@
     color: #fff;
     font-size: 1em;
     padding-left: 20px;
-}
+}*/
 
 /* Launch */
 
-#horizontal-launch-top{
+/*#horizontal-launch-top{
     border-bottom: 1px solid #fff;
     width: 24px;
     position: absolute;
@@ -840,7 +915,7 @@
     color: #fff;
     font-size: 1em;
     padding-left: 10px;
-}
+}*/
 
 
 /* Contact Me */
