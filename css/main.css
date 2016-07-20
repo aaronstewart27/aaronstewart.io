@@ -160,9 +160,10 @@
 .top-text p:nth-child(1){
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 30px;
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .top-text p:nth-child(2){
@@ -179,6 +180,7 @@
 .myinfo-container-left{
     width: 45%;
     float: left;
+    padding-top: 30px;
 }
 
 .myinfo-container-right{
@@ -186,17 +188,18 @@
     float: right;
 }
 
+.myinfo-container-right h3{
+    padding-left: 18%;
+}
+
 #myinfo-data li:nth-of-type(n){
     margin-left: 7%;
-    line-height: 140%;
+    line-height: 200%;
+    list-style-type: none;
 }
 
 #myinfo-data{
     margin-bottom: 10%;
-}
-
-#myinfo-data li:nth-of-type(n){
-    list-style-type: none;
 }
 
 /* Download Resume Button */
@@ -226,6 +229,11 @@
 /* Format Hobbies & Interests */
 
 .tech-row1{
+    display: inline-flex;
+    width: 100%;
+}
+
+.tech-row2{
     display: inline-flex;
     width: 100%;
 }
@@ -262,7 +270,7 @@
 /* Photography */
 
 #photography{
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 #photo{
@@ -276,6 +284,81 @@
 .fa.fa-camera{
     font-size: 1.5em;
 }
+
+/* Travel */
+
+#travel{
+    margin-left: 15%;
+}
+
+.fa-globe{
+    color: #fff;
+}
+
+.fa.fa-globe{
+    font-size: 2em;
+
+}
+
+#globe i:nth-of-type(1){
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+#travel p{
+    padding-left: 4px;
+}
+
+/* Coding */
+
+.fa-code{
+    color: #fff;
+}
+
+.fa.fa-code{
+    font-size: 1.8em;
+}
+
+#coding i:nth-of-type(1){
+    padding-left: 10px;
+    padding-top: 11px;
+}
+
+/* Music */
+.fa-music{
+    color: #fff;
+}
+
+.fa.fa-music{
+    font-size: 1.8em;
+}
+
+#music{
+    margin-left: 20%;
+}
+
+#music p{
+    padding-left: 5px;
+}
+
+/* Development */
+
+.fa-rocket{
+    color: #fff;
+}
+
+.fa.fa-rocket{
+    font-size: 1.5em;
+}
+
+#development{
+    margin-left: 15%;
+}
+
+#rocket{
+    margin-left: 20px;
+}
+
 
 
 
