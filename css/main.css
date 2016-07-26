@@ -1184,14 +1184,169 @@
     background-position: center;
 }
 
-
+/*********************/
 /* RESPONSIVE DESIGN */
+/*********************/
 
 
+/* Large Desktop */
+@media (min-width: 1200px) {
+    /* Do nothing */
+}
 
+/* Desktop */
+@media (max-width: 1200px) {
+    /* Do nothing */
+}
 
+/* Tablet */
+@media (max-width: 980px) {
 
+    .heading-container h1{
+        margin-top: 5%;
+        margin-bottom: 3%;
+        padding-left: 25px;
+    }
 
+    .top-text{
+        width: 85%;
+        padding-left: 0;
+        margin-left: 5%;
+    }
 
+    .top-text p:nth-of-type(1){
+        font-size: 0.9em;
+    }
 
+    .top-text p:nth-of-type(2){
+        font-size: 0.85em;
+    }
+
+    .myinfo-container-left{
+        padding-left: 35px;
+        padding-top: 0;
+    }
+
+    #myinfo-data{
+        font-size: 0.85em;
+        margin-bottom: 30px;
+    }
+
+    #myinfo-data li:nth-of-type(n){
+        line-height: 170%;
+    }
+
+    #about-me-resume-button{
+        height: 30px;
+        width: 180px;
+    }
+
+    #resume-button{
+        font-size: 0.85em;
+    }
+
+    .myinfo-container-right h3{
+        margin-top: 0;
+        font-size: 1em;
+    }
+
+    .hobby-circle{
+        height: 40px;
+        width: 40px;
+    }
+
+    .fa.fa-coffee{
+        font-size: 1.3em;
+    }
+
+    i.fa.fa-coffee{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .fa.fa-camera{
+        font-size: 1.3em;
+    }
+
+    i.fa.fa-camera{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    #travel p{
+        padding-left: 0;
+    }
+
+    .fa.fa-globe{
+        font-size: 1.7em;
+    }
+
+    #globe i:nth-of-type(1){
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+
+    .fa.fa-code{
+        font-size: 1.5em;
+    }
+
+    #coding i:nth-of-type(1){
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    #music{
+        margin-left: 19%;
+    }
+
+    #music p{
+        padding-left: 0;
+    }
+
+    .fa.fa-music{
+        font-size: 1.5em;
+    }
+
+    #songs i:nth-of-type(1){
+        padding-left: 8px;
+        padding-top: 8px;
+    }
+
+    #development{
+        padding-left: 10px;
+    }
+
+    .fa.fa-rocket{
+        font-size: 1.5em;
+    }
+
+    #rocket i:nth-of-type(1){
+        padding-left: 8px;
+        padding-top: 9px;
+    }
+
+    #html-icon p{
+        padding-left: 4px;
+    }
+
+    #css-icon p{
+        padding-left: 10px;
+    }
+    
+    #jquery-icon p{
+        padding-left: 10px;
+    }
+
+    #github-icon p{
+        padding-left: 5px;
+    }
+
+    #photoshop-icon{
+        padding-left: 5px;
+    }
+
+    #photoshop-icon img{
+        padding-left: 6px;
+    }
+}
 
