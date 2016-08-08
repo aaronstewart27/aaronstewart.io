@@ -1033,9 +1033,9 @@
 }
 
 .inner-container-contact{
-    width: 100%;
+    width: 95%;
     display: inline-flex;
-    padding-left: 17%;
+    margin-left: 17%;
 }
 
 #address{
@@ -1092,6 +1092,7 @@
 
 #phone{
     width: 25%;
+    margin-left: 3%;
 }
 
 #phone img{
@@ -1192,22 +1193,41 @@
 /* Large Desktop */
 @media (min-width: 1200px) {
     
+    .hero h1{
+        font-size: 3.5em;
+    }
+
+    .hero h2{
+        font-size: 1.5em;
+    }
+
+    .heading-container h1{
+        font-size: 3.5em;
+    }
+
+    .heading-skills h1{
+        font-size: 3.5em;
+    }
+
+    .heading-contact h3{
+        font-size: 3em;
+    }
 }
 
 /* Desktop */
-/*@media (max-width: 1200px) {
-    
-}*/
+@media (max-width: 1200px) {
+    /* Do Nothing */
+}
 
 /* Tablet */
-/*@media (max-width: 980px) {
+@media (max-width: 980px) {
 
     .heading-container h1{
         margin-top: 5%;
         margin-bottom: 3%;
         padding-left: 25px;
     }
-
+    
     .top-text{
         width: 85%;
         padding-left: 0;
@@ -1237,12 +1257,12 @@
     }
 
     #about-me-resume-button{
-        height: 30px;
+        height: 35px;
         width: 180px;
     }
 
     #resume-button{
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 
     .myinfo-container-right h3{
@@ -1348,19 +1368,504 @@
     #photoshop-icon img{
         padding-left: 6px;
     }
-}*/
+
+    .hero.container{
+        padding: 0px;
+    }
+
+    .inner-container-contact{
+        width: 75%;
+        margin-left: 17%;
+    }
+
+    .about-inner-container{
+        padding: 0;
+    }
+
+    #address{
+        width: 28%;
+    }
+
+    #address img{
+        padding-right: 3px;
+    }
+
+    #email{
+        width: 32%;
+        padding-left: 10px;
+    }
+
+    #email img{
+        padding-right: 3px;
+    }
+
+    #phone{
+        width: 20%;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+
+    #phone img{
+        padding-right: 3px;
+    }
+}
 
 /* Phablet */
-/*@media (max-width: 780px) {
+@media (max-width: 780px) {
     
+    .hero.container{
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .about.container{
+        width: 100%;
+    }
+
+    .about-inner-container{
+        width: 100%;
+    }
+
+    .skills.container{
+        width: 100%;
+    }
+
+    .contact.container{
+        width: 100%;
+    }
+
+    .footer.container{
+        width: 100%;
+    }
+
     .heading-container h1{
-           
+        font-size: 2.5em;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+
+    .top-text{
+        width: 80%;
+        margin-left: 10%;
     }
 
     .top-text p:nth-of-type(1){
+        font-size: 0.75em;
+        margin-bottom: 0;
+    }
+
+    .top-text p:nth-of-type(2){
+        font-size: 0.7em;
+        margin-bottom: 3%;
+    }
+
+    #myinfo-data{
+        margin-bottom: 5%;
+    }
+
+    #myinfo-data li:nth-of-type(n){
+        line-height: 140%;
+    }
+
+    .myinfo-container-right h3{
+        margin-bottom: 3%;
+    }
+
+    .tech-row1{
+        height: 80px;
+    }
+
+    .tech-row2{
+        height: 80px;
+    }
+
+    #coffee p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #photography p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #travel p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #code p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #music p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #development p{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    .inner-container-contact{
+        margin-left: 15%;
+        width: 80%;
+    }
+
+    #address{
+        width: 30%;
+    }
+
+    #address img{
+        height: 50px;
+    }
+
+    #address p:nth-of-type(1){
+        font-size: 1em;
+    }
+
+    #address p:nth-of-type(2){
+        font-size: 0.75em;
+    }
+
+    #email{
+        width: 35%;
+        padding-left: 10px;
+    }
+
+    #email img{
+        height: 50px;
+    }
+
+    #email p:nth-of-type(1){
+        margin-left: 23%;
+        font-size: 1em;
+    }
+
+    #email p:nth-of-type(2){
+        margin-left: 24%;
+        font-size: 0.75em;
+    }
+
+    #phone{
+        width: 25%;
+        padding-left: 10px;
+    }
+
+    #phone img{
+        height: 50px;
+    }
+
+    #phone p:nth-of-type(1){
+        font-size: 1em;
+    }
+
+    #phone p:nth-of-type(2){
+        font-size: 0.75em;
+    }
+
+    #copyright{
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile */
+@media (max-width: 440px) {
+    
+    .hero h1{
+        font-size: 2.75em;
+    }
+
+    #skills-row1{
+        width: 100%;
+    }
+
+    #html-icon{
+        padding-right: 5%;
+    }
+
+    .fa.fa-html5{
+        font-size: 3em;
+    }
+
+    #css-icon{
+        padding-right: 5%;
+    }
+
+    .fa.fa-css3{
+        font-size: 3em;
+    }
+
+    #javascript-icon{
+        padding-right: 5%;
+    }
+
+    #javascript-icon img{
+        width: 45px;
+        height: 45px;
+    }
+
+    #jquery-icon{
+        padding-right: 5%;
+    }
+
+    #jquery-icon img{
+        width: 45px;
+        height: 45px;
+    }
+
+    #github-icon{
+        padding-right: 5%;
+    }
+
+    .fa.fa-github{
+        font-size: 3em;
+    }
+
+    #terminal-icon{
+        padding-right: 5%;
+    }
+
+    .fa.fa-terminal{
+        font-size: 3em;
+    }
+
+    #sublime-text-icon{
+        padding-right: 5%;
+    }
+
+    #sublime-text-icon img{
+        width: 45px;
+        height: 45px;
+    }
+
+    #photoshop-icon{
+        padding-right: 5%;
+    }
+
+    #photoshop-icon img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .heading-container h1{
         font-size: 2em;
     }
-}*/
+
+    .top-text{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .top-text p:nth-of-type(1){
+        font-weight: 500;
+        line-height: 190%;
+        width: 95%;
+        margin-left: 4%;
+    }
+
+    .top-text p:nth-of-type(2){
+        font-weight: 500;
+        line-height: 190%;
+        width: 95%;
+        margin-left: 4%;
+        opacity: 0.6;
+    }
+
+    .myinfo-container-left{
+        padding-left: 1%;
+        width: 51%;
+    }
+
+    #myinfo-data{
+        padding-top: 10%;
+        padding-left: 0;
+    }
+
+    #myinfo-data li:nth-of-type(n){
+        font-size: 0.8em;
+    }
+
+    #about-me-resume-button{
+        margin-left: 5%;
+        height: 30px;
+        width: 150px;
+    }
+
+    #resume-button{
+        font-size: 0.8em;
+    }
+
+    .fa.fa-download{
+        padding-left: 10px;
+    }
+
+    .myinfo-container-right h3{
+        font-size: 0.9em;
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .hobby-circle{
+        height: 35px;
+        width: 35px;
+    }
+
+    #coffee p{
+        font-size: 0.9em;
+    }
+
+    i.fa.fa-coffee{
+        padding-top: 7px;
+        padding-left: 7px;
+    }
+
+    #photography{
+        margin-left: 5%;
+    }
+
+    #photography p{
+        font-size: 0.9em;
+    }
+
+    i.fa.fa-camera{
+        padding-top: 8px;
+        padding-left: 7px;
+    }
+
+    #travel{
+        margin-left: 5%;
+    }
+
+    #travel p{
+        font-size: 0.9em;
+    }
+
+    #globe i:nth-of-type(1){
+        padding-top: 4px;
+        padding-left: 6px;
+    }
+
+    #code p{
+        font-size: 0.9em;
+    }
+
+    #coding i:nth-of-type(1){
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    #music{
+        margin-left: 13%;
+    }
+
+    #music p{
+        font-size: 0.9em;
+    }
+
+    #songs i:nth-of-type(1){
+        padding-top: 4px;
+        padding-left: 6px;
+    }
+
+    #development{
+        margin-left: 5%;
+    }
+    #development p{
+        font-size: 0.9em;
+    }
+
+    #rocket i:nth-of-type(1){
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .skills.wrapper{
+        margin-top: 90%;
+    }
+
+    .heading-skills h1{
+        font-size: 2em;
+        padding-top: 10%;
+    }
+
+    #skills-row1{
+        margin-left: 15%;
+        width: 80%;
+    }
+
+    .fa.fa-html5{
+        padding-left: 10px;
+    }
+
+    .fa.fa-css3{
+        padding-left: 10px;
+    }
+
+    #javascript-icon img{
+        padding-left: 18px;
+    }
+
+    #jquery-icon img{
+        padding-left: 12px;
+    }
+
+    .fa.fa-github{
+        padding-left: 10px;
+    }
+
+    .fa.fa-terminal{
+        padding-left: 10px;
+    }
+
+    #sublime-text-icon p{
+        text-align: center;
+    }
+
+    #skills-row2{
+        margin-left: 15%;
+        width: 80%;
+    }
+
+    .heading-contact h3{
+        font-size: 2em;
+    }
+
+    .inner-container-contact{
+        margin-left: 0;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #address{
+        width: 45%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    #email{
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #phone{
+        width: 45%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 0;
+    }
+}
 
 
 
