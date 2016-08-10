@@ -121,6 +121,24 @@
 
 /* About Me Formatting */
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 .about.wrapper{
     width: 100%;
 }
@@ -136,7 +154,7 @@
     width: 960px;
     margin: 0px auto;
     padding: 15px 15px;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .bottom-container{
@@ -427,7 +445,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 48%;
+    /*margin-top: 48%;*/
 }
 
 .container.skills{
@@ -441,11 +459,22 @@
     padding-top: 80px;
 }
 
+.skills-icon {
+    width: 150px;
+    text-align: center;
+}
+
+.skills-icon p {
+    padding: 0 !important;
+}
+
 #skills-row1{
-    display: inline-flex;
+    display: flex;
     width: 80%;
-    margin-left: 15%;
-    margin-top: 5%;
+    /*margin-left: 15%;
+    margin-top: 5%;*/
+    justify-content: space-between;
+    margin: auto;
 }
 
 .fa-html5{
@@ -454,7 +483,7 @@
 
 .fa.fa-html5{
     font-size: 4.5em;
-    padding-left: 4px;
+    /*padding-left: 4px;*/
 }
 
 .fa-css3{
@@ -468,7 +497,7 @@
 #javascript-icon img{
     width: 65px;
     height: 65px;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 
 #jquery-icon img{
@@ -477,15 +506,15 @@
 }
 
 #html-icon{
-    padding-right: 15%;
+    /*padding-right: 15%;*/
 }
 
 #css-icon{
-    padding-right: 15%;
+    /*padding-right: 15%;*/
 }
 
 #javascript-icon{
-    padding-right: 15%;
+    /*padding-right: 15%;*/
 }
 
 #html-icon p{
@@ -509,10 +538,12 @@
 }
 
 #skills-row2{
-    margin-top: 5%;
-    display: inline-flex;
+    /*margin-top: 5%;*/
+    display: flex;
     width: 80%;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
+    justify-content: space-between;
+    margin: auto;
 }
 
 .fa-github{
@@ -542,19 +573,19 @@
 }
 
 #github-icon{
-    padding-right: 15%;
+    /*padding-right: 15%;*/
 }
 
 #terminal-icon{
-    padding-right: 15%;
+    /*padding-right: 15%;*/
 }
 
 #sublime-text-icon{
-    padding-right: 12%;
+    /*padding-right: 12%;*/
 }
 
 #sublime-text-icon img{
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 
 #photoshop-icon img{
@@ -1092,7 +1123,7 @@
 
 #phone{
     width: 25%;
-    margin-left: 3%;
+    /*margin-left: 3%;*/
 }
 
 #phone img{
@@ -1217,6 +1248,12 @@
 /* Desktop */
 @media (max-width: 1200px) {
     /* Do Nothing */
+}
+
+@media (max-width: 960px){
+    .container{
+       width: 100%;
+   }
 }
 
 /* Tablet */
@@ -1362,11 +1399,11 @@
     }
 
     #photoshop-icon{
-        padding-left: 5px;
+        /*padding-left: 5px;*/
     }
 
     #photoshop-icon img{
-        padding-left: 6px;
+        /*padding-left: 6px;*/
     }
 
     .hero.container{
@@ -1585,7 +1622,7 @@
     }
 
     #html-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     .fa.fa-html5{
@@ -1593,7 +1630,7 @@
     }
 
     #css-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     .fa.fa-css3{
@@ -1601,7 +1638,7 @@
     }
 
     #javascript-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     #javascript-icon img{
@@ -1610,7 +1647,7 @@
     }
 
     #jquery-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     #jquery-icon img{
@@ -1619,7 +1656,7 @@
     }
 
     #github-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     .fa.fa-github{
@@ -1627,7 +1664,7 @@
     }
 
     #terminal-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     .fa.fa-terminal{
@@ -1635,7 +1672,7 @@
     }
 
     #sublime-text-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     #sublime-text-icon img{
@@ -1644,7 +1681,7 @@
     }
 
     #photoshop-icon{
-        padding-right: 5%;
+        /*padding-right: 5%;*/
     }
 
     #photoshop-icon img{
@@ -1784,42 +1821,37 @@
         padding-left: 5px;
     }
 
-    .skills.wrapper{
-        margin-top: 90%;
-    }
-
     .heading-skills h1{
         font-size: 2em;
         padding-top: 10%;
     }
 
     #skills-row1{
-        margin-left: 15%;
         width: 80%;
     }
 
     .fa.fa-html5{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
     }
 
     .fa.fa-css3{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
     }
 
     #javascript-icon img{
-        padding-left: 18px;
+        /*padding-left: 18px;*/
     }
 
     #jquery-icon img{
-        padding-left: 12px;
+        /*padding-left: 12px;*/
     }
 
     .fa.fa-github{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
     }
 
     .fa.fa-terminal{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
     }
 
     #sublime-text-icon p{
@@ -1827,7 +1859,6 @@
     }
 
     #skills-row2{
-        margin-left: 15%;
         width: 80%;
     }
 
@@ -1866,6 +1897,109 @@
         padding-left: 0;
     }
 }
+
+/* Mobile iPhone 5-5S */
+@media (min-width: 320px) and (max-width: 391px){
+
+    .myinfo-container-left{
+        float: none;
+        width: 60%;
+        margin: auto;
+        padding-left: 25%;
+    }
+
+    #myinfo-data{
+        font-size: 0.9em;
+    }
+
+    .myinfo-container-right{
+        float: none;
+        width: 60%;
+        margin: auto;
+        padding-left: 25%;
+    }
+
+    .myinfo-container-right h3{
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+
+    .skills-icon p{
+        font-size: 0.8em;
+    }
+
+    #address{
+        width: 60%;
+    }
+
+    #address p:nth-of-type(1){
+        margin-left: 0;
+    }
+
+    #address p:nth-of-type(2){
+        margin-left: 0;
+    }
+
+    #email{
+        width: 60%;
+        padding-left: 0;
+    }
+
+    #email p:nth-of-type(1){
+        margin-left: 0;
+    }
+
+    #email p:nth-of-type(2){
+        margin-left: 0;
+    }
+
+    #phone{
+        width: 60%;
+    }
+
+    #phone p:nth-of-type(1){
+        margin-left: 0;
+    }
+
+    #phone p:nth-of-type(2){
+        margin-left: 0;
+    }
+
+}
+
+/*@media (max-width: 320px){
+
+
+    .heading-container h1{
+        padding-left: 0;
+    }
+
+    .myinfo-container-left{
+        padding-left: 15%;
+    }
+
+    .myinfo-container-right{
+        padding-left: 15%;
+    }
+
+    .skills-icon p{
+        font-size: 0.8em;
+    }
+
+    #address{
+        width: 60%;
+        padding-left: 0;
+    }
+
+    #email{
+        width: 60%;
+        padding-left: 0;
+    }
+
+    #phone{
+        width: 60%;
+    }
+}*/
 
 
 
